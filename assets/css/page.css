@@ -1,0 +1,29 @@
+.pagina-main {
+	background-color: rgba(244, 244, 244, 0);
+	height: 90%;
+	padding-top: 20px;
+}
+
+.pagina {
+	background-color: rgba(255, 255, 255, 0);
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0.5rem;
+	line-height: 1.7;
+	font-size: 1rem;
+}
+
+.pagina-titulo {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #000;
+}
+
+.pagina-conteudo {
+	margin-bottom: 1rem;
+}
+
+.pagina-thumbnail img {
+	max-width: 100%;
+	max-height: 500px;
+}

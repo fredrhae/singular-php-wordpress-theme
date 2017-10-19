@@ -1,0 +1,61 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+@media (orientation: portrait) {
+	.full {
+	  background-size: 200% auto;
+	  background-position: top right;
+	}
+}
+
+.chamada-principal {
+	margin: 2rem 0;
+}
+
+.chamada-principal h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.chamada-principal p {
+	font-size: 2rem;
+}
+
+
+body .btn {
+	white-space: normal;
+}
+
+body .btn-outline-secondary {
+    background-color: #ffffff00;
+    border-color: #ffffff;
+	color: #FFF; 
+}
+
+body .btn-outline-secondary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #8f8f8f;
+}
+
+/*
+body .btn-outline-secondary:hover, body .btn-outline-secondary:focus {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #8f8f8f;
+}
+
+body .btn-outline-secondary:active, body .btn-outline-secondary:visited, body .btn-outline-secondary:active:focus, body .btn-outline-secondary:active:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #8f8f8f;
+}*/
