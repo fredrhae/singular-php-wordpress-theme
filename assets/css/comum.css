@@ -4,6 +4,9 @@ html {
 
 body {
 	height: 100%;
+	padding-top: 100px;
+	overflow-x: auto;
+	overflow-y: auto;
 }
 
 .container-fluid {

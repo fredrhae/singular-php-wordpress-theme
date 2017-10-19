@@ -1,7 +1,9 @@
+/* Styles para posicionamento essencial na home*/
 .home-main {
-	background-color: #f4f4f400;
 	min-height: 880px;
 	position: relative;
+	background-image: url(../imagens/background-home.png);
+	background-repeat: no-repeat;
 }
 
 .vertical-center {
@@ -21,6 +23,8 @@
 	max-height: 500px;
 }
 
+/* Styles para o item de chamada principal da home*/
+
 .home-titulo, .home-chamada-principal {
 	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
@@ -36,6 +40,8 @@
 .home-chamada-principal {
 	font-size: 1.0rem;
 }
+
+/* Styles para os itens de soluções*/
 
 .home-chamada-solucoes-produtos-1, .home-chamada-solucoes-produtos-2, .home-texto-solucoes {
 	font-family: 'Open Sans', sans-serif;
@@ -108,3 +114,8 @@
 	margin-top: 0.2em;
 	background: rgba(255, 255, 255, 0);
   }
+
+/* Styles para os itens de portfólio*/
+.portfolio-item {
+    margin-bottom: 30px;
+}

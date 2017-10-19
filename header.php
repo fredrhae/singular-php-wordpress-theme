@@ -10,47 +10,39 @@
         <?php get_titulo(); ?>
     </title>
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/comum.css">
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/comum.css">
     <link rel="stylesheet" type="text/css" href="<?= $home;?>/assets/css/<?= $css_escolhido; ?>.css">
     <?php wp_head();?>
 </head>
 
 <body>
-<?php 
-if($css_escolhido == 'index' || $css_escolhido == 'page') {
-    $background_image = 'background-home.png';
-}
-
-$background_image_path = $home . "/assets/imagens/" . $background_image;
-?>
-<div style="background-image: url('<?=$background_image_path?>'); background-repeat: no-repeat">
-    <header>
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="<?=home_url()?>">
-                    <img src="<?=$home?>/assets/imagens/Singular-logo.png" width="197" height="74" alt="">
-                </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?=get_page_link_by_slug('empresa')?>">Empresa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?=get_page_link_by_slug('contatos')?>">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?=get_page_link_by_slug('blog')?>">Blog</a>
-                        </li>
-                    </ul>
-                </div>
+<header>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="<?=home_url()?>">
+                <img src="<?=$home?>/assets/imagens/Singular-logo.png" width="197" height="74" alt="">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=get_page_link_by_slug('empresa')?>">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=get_page_link_by_slug('contatos')?>">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=get_page_link_by_slug('blog')?>">Blog</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
