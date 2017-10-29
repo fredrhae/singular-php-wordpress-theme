@@ -21,6 +21,7 @@ body {
 	}
 }
 
+
 .chamada-principal {
 	margin: 2rem 0;
 }
@@ -50,6 +51,122 @@ body .btn-outline-secondary:hover {
     border-color: #ffffff;
     color: #8f8f8f;
 }
+
+/* Styles para posicionamento nas paginas do site */
+.container-principal {
+	min-height: 880px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.vertical-center {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.full-image-background {
+	position: relative;
+	padding: 0;	
+	margin: 0 auto;	
+	background-size: cover;	
+	overflow: hidden;
+	min-height: 400px;
+	max-height: 500px;
+}
+
+/* Styles para o item de chamada principal da home*/
+
+.container-principal-titulo, .container-principal-chamada {
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container-principal-titulo {
+	font-size: 3.5rem;
+	font-weight: bolder;
+	letter-spacing: -0.24rem;
+}
+
+.container-principal-chamada {
+	font-size: 1.0rem;
+}
+
+/* Styles para os itens de soluções*/
+
+.chamada-solucoes-produtos-1, .chamada-solucoes-produtos-2, .texto-solucoes {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 2.0rem;
+	font-weight: bolder;
+	letter-spacing: -0.2rem;	
+}
+
+.chamada-solucoes-produtos-1 {
+	color: #8f8f8f;
+}
+
+.texto-solucoes {
+	color: #979696;
+	font-size: 1.0rem;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+.chamada-solucoes-produtos-2 {
+	color: #59bce9;
+}
+
+.titulo-solucao, .texto-solucao {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #ffffff;	
+
+}
+
+.titulo-solucao {
+	font-size: 2.5rem;
+	font-weight: bolder;
+	letter-spacing: -0.1rem;
+}
+
+.texto-solucao {
+	font-size: 0.9rem;
+	letter-spacing: 0;
+	text-align: justify;
+}
+
+/* styles for '...' */ 
+.block-with-text {
+	overflow: hidden;
+	position: relative; 
+	line-height: 1.5em;
+	max-height: 7.5em; 
+	text-align: justify;  
+	margin-right: -1em;
+	padding-right: 1em;
+  }
+
+  /* create the ... */
+  .block-with-text:before {
+	content: '...';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+  }
+
+  /* hide ... if we have text, which is less than or equal to max lines */
+  .block-with-text:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background: rgba(255, 255, 255, 0);
+  }
 
 /*
 body .btn-outline-secondary:hover, body .btn-outline-secondary:focus {
