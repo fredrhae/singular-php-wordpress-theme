@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/comum.css">
+    <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="<?= $home;?>/assets/css/<?= $css_escolhido; ?>.css">
     <?php wp_head();?>
 </head>
