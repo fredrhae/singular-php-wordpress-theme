@@ -1,98 +1,51 @@
 <?php $home = get_template_directory_uri();?>
-    <div class="bg-secondary">
-        <div class="container p-4">
-            <table class="table table-borderless auto">
-                <thead>
-                    <th scope="col" style="border: none;"></th>
-                    <th scope="col" 
-                        style="font-family: 'Open Sans', sans-serif;
-                               font-weight: bolder;
-                               font-size: 1.4rem;
-                               color: #5F5F5F;
-                               border: none;">A Singular</th>
-                    <th scope="col" style="border: none;"></th>
-                    <th scope="col" style="border: none;"></th>
-                <tbody>
-                    <tr style="border: none;">
-                        <td rowspan="4" style="border: none;">
-                        <a  style="text-decoration: none; border: none" href="<?=home_url()?>">
-                            <img src="<?=$home?>/assets/imagens/Singular-logo.png" width="157" height="59" alt="">
-                         </a>
-                        </td>
-                    </tr>
-                    <tr style="border: none;">
-                        <td style="border: none;">
-                            <a style="font-family: 'Open Sans', sans-serif;
-                                font-weight: bold;
-                                font-size: 0.8rem;
-                                text-decoration: none;
-                                color: #FFFFFF"
-                            onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1.0'"       
-                            href="<?=get_page_link_by_slug('empresa')?>">Sobre nós</a>
-                        </td>
-                        <td style="border: none;">
-                            <a style="font-family: 'Open Sans', sans-serif;
-                            font-weight: bold;
-                            font-size: 0.8rem;
-                            text-decoration: none;
-                            color: #FFFFFF"
-                            onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1.0'"
-                            href="<?=get_page_link_by_slug('empresa')?>">Projetos</a>
-                        </td>
-                        <td rowspan="4" style="border: none;">
-                            <a href="#">
-                                <img src="<?=$home?>/assets/imagens/Facebook.svg" width="51" height="51" alt="">
-                            </a>
-                        </td>
-                        <td rowspan="4" style="border: none;">
-                            <a href="#">
-                                <img src="<?=$home?>/assets/imagens/Instagram.svg" width="51" height="51" alt="">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr style="border: none;">
-                        <td style="border: none;">
-                            <a style="font-family: 'Open Sans', sans-serif;
-                                font-weight: bold;
-                                font-size: 0.8rem;
-                                text-decoration: none;
-                                color: #FFFFFF"
-                            onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1.0'"
-                            href="<?=get_page_link_by_slug('empresa')?>">Soluções</a>
-                        </td>
-                        <td style="border: none;">
-                            <a style="font-family: 'Open Sans', sans-serif;
-                                font-weight: bold;
-                                font-size: 0.8rem;
-                                text-decoration: none;
-                                color: #FFFFFF"
-                            onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1.0'"
-                            href="<?=get_page_link_by_slug('contatos')?>">Contatos</a>
-                        </td>
-                    </tr>
-                    <tr style="border: none;">
-                        <td style="border: none;">
-                            <a style="font-family: 'Open Sans', sans-serif;
-                                font-weight: bold;
-                                font-size: 0.8rem;
-                                text-decoration: none;
-                                color: #FFFFFF"
-                            onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1.0'"
-                            href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a>
-                        </td>
-                        <td style="border: none;">
-                            <a style="font-family: 'Open Sans', sans-serif;
-                                font-weight: bold;
-                                font-size: 0.8rem;
-                                text-decoration: none;
-                                color: #FFFFFF"
-                            onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1.0'"
-                            href="<?=get_page_link_by_slug('blog')?>">Blog</a>
-                        </td>
-                    </tr>
-                </tbody>
-                </thead>
-            </table>
+    <div class="footer-bs bg-secondary">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+                <a  style="text-decoration: none; border: none" href="<?=home_url()?>">
+                    <img src="<?=$home?>/assets/imagens/Singular-logo.png" width="157" height="59" alt="">
+                </a>
+            </div>
+        	<div class="col-md-6 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="pages">
+                            <li><a href="<?=get_page_link_by_slug('empresa')?>">A Singular</a></li>
+                            <li><a href="<?=get_page_link_by_slug('empresa')?>">Soluções</a></li>
+                            <li><a href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="pages">
+                        <li><a href="<?=get_page_link_by_slug('empresa')?>">Projetos</a></li>
+                        <li><a href="<?=get_page_link_by_slug('contatos')?>">Contatos</a></li>
+                        <li><a href="<?=get_page_link_by_slug('blog')?>">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="pages">
+                            <li><a href="<?=get_page_link_by_slug('empresa')?>">Sobre nós</a></li>
+                            <li><a href="<?=get_page_link_by_slug('empresa')?>">Visão e valores</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        	<div class="col-md-3 footer-social animated fadeInDown">
+            	<h4>Siga-nos</h4>
+               	<div class="row">
+                    <div class="col-md-1">
+                        <a href="#">
+                            <img src="<?=$home?>/assets/imagens/Facebook.svg" width="30" height="30" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-1 pl-4">
+                        <a href="#">
+                            <img src="<?=$home?>/assets/imagens/Instagram.svg" width="30" height="30" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="py-4 bg-dark">
