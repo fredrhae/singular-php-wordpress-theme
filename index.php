@@ -4,17 +4,17 @@
     $home = get_template_directory_uri(); 
 ?>
 <!-- Conteudo principal -->
-<div class="home-main pb-5 mb-5" >
+<div class="container-principal pb-5 mb-5" style="background-image: url(<?=$home?>/assets/imagens/background-home.png);">
     <div class="container vertical-center">
         <div class="row">
             <div class="col-md-12" align="center">
-                <h1 class="home-titulo">SINGULAR AUTOMAÇÕES</h1>
+                <h1 class="container-principal-titulo">SINGULAR AUTOMAÇÕES</h1>
             </div>
         </div>
         <div class="row mt-3">
             <div class="col-md-3"></div>
             <div class="col-md-6"  align="center">
-                <p class="mx-auto home-chamada-principal"> Estilo de vida, inspirado por idéias que prometem mais conforto, 
+                <p class="mx-auto container-principal-chamada"> Estilo de vida, inspirado por idéias que prometem mais conforto, 
                 comodidade, segurança e muito mais felicidade para você e sua família.</p>
             </div>
             <div class="col-md-3"></div>
@@ -32,14 +32,14 @@
     </div>
 </div>
 <!-- Painel com solucoes cadastradas -->
-<div style="background-color: #ffffff;" class="home-solucoes container-fluid">
+<div style="background-color: #ffffff;" class="container-fluid">
     <div class="row mb-4">
         <div class="col-md-12" align="center">
-            <p class="home-chamada-solucoes-produtos-1">NOSSAS <span class="home-chamada-solucoes-produtos-2">SOLUÇÕES</span></p>
+            <p class="chamada-solucoes-produtos-1">NOSSAS <span class="chamada-solucoes-produtos-2">SOLUÇÕES</span></p>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-6"  align="center">
-            <p class="mx-auto home-texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
+            <p class="mx-auto texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
                 lobortis feugiat. Sed aliquam scelerisque sapien molestie cursus. In id malesuada est, eget porta purus.
                 Fusce neque odio, mollis quis dictum eget, ultrices ut nulla. Mauris tellus mauris, lacinia at ultricies eget, congue fermentum diam.</p>
         </div>
@@ -108,11 +108,11 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-12" align="center">
-                    <p class="home-chamada-solucoes-produtos-1">NOSSOS <span class="home-chamada-solucoes-produtos-2">PRODUTOS</span></p>
+                    <p class="chamada-solucoes-produtos-1">NOSSOS <span class="chamada-solucoes-produtos-2">PRODUTOS</span></p>
                 </div>
                 <div class="col-md-3"></div>
                 <div class="col-md-6"  align="center">
-                    <p class="mx-auto home-texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
+                    <p class="mx-auto texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
                         lobortis feugiat. Sed aliquam scelerisque sapien molestie cursus. In id malesuada est, eget porta purus.
                         Fusce neque odio, mollis quis dictum eget, ultrices ut nulla. Mauris tellus mauris, lacinia at ultricies eget, congue fermentum diam.</p>
                 </div>

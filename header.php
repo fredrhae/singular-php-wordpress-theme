@@ -11,8 +11,8 @@
     </title>
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/comum.css">
     <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="<?= $home?>/assets/css/comum.css">
     <link rel="stylesheet" type="text/css" href="<?= $home;?>/assets/css/<?= $css_escolhido; ?>.css">
     <?php wp_head();?>
 </head>
@@ -35,6 +35,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?=get_page_link_by_slug('contatos')?>">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=get_page_link_by_slug('solucoes')?>">Soluções</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a>
