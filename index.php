@@ -35,7 +35,7 @@
 <div style="background-color: #ffffff;" class="container-fluid">
     <div class="row mb-4">
         <div class="col-md-12" align="center">
-            <p class="chamada-solucoes-produtos-1">NOSSAS <span class="chamada-solucoes-produtos-2">SOLUÇÕES</span></p>
+            <p class="chamada-colorida-cinza">NOSSAS <span class="chamada-colorida-azul">SOLUÇÕES</span></p>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-6"  align="center">
@@ -108,7 +108,7 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-12" align="center">
-                    <p class="chamada-solucoes-produtos-1">NOSSOS <span class="chamada-solucoes-produtos-2">PRODUTOS</span></p>
+                    <p class="chamada-colorida-cinza">NOSSOS <span class="chamada-colorida-azul">PRODUTOS</span></p>
                 </div>
                 <div class="col-md-3"></div>
                 <div class="col-md-6"  align="center">

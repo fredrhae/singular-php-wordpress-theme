@@ -96,7 +96,7 @@ body .btn-outline-secondary:hover {
 
 /* Styles para os itens de soluções*/
 
-.chamada-solucoes-produtos-1, .chamada-solucoes-produtos-2, .texto-solucoes {
+.chamada-colorida-cinza, .chamada-colorida-azul, .texto-solucoes {
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 2.0rem;
@@ -104,7 +104,7 @@ body .btn-outline-secondary:hover {
 	letter-spacing: -0.2rem;	
 }
 
-.chamada-solucoes-produtos-1 {
+.chamada-colorida-cinza {
 	color: #8f8f8f;
 }
 
@@ -115,7 +115,7 @@ body .btn-outline-secondary:hover {
 	letter-spacing: 0;
 }
 
-.chamada-solucoes-produtos-2 {
+.chamada-colorida-azul {
 	color: #59bce9;
 }
 

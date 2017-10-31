@@ -8,13 +8,14 @@ $home = get_template_directory_uri();
 $post_slug = get_post_field( 'post_name', get_post() );
 switch ($post_slug) {
 	case 'solucoes':
-			$titulo_container_principal = "Soluções Inteligentes";
-			$conteudo_container_principal = "Somos uma empresa de estilo de vida inspirada por ideais, que prometem mais conforto, comodidade e segurança.";
+			$titulo_container_principal = "SOLUÇÕES INTELIGENTES";
 		break;
 	case 'empresa':
-			$titulo_container_principal = "Sobre a empresa";
-			$conteudo_container_principal = "Maecenas ac volutpat mi. Morbi placerat, arcu eu volutpat elementum, neque odio posuere ligula, at accumsan quam neque non enim.";
+			$titulo_container_principal = "SOBRE A EMPRESA";
 		break;
+	case 'arquitetos':
+		$titulo_container_principal = "ARQUITETOS";
+	break;
 }
 
 if( have_posts() ) 
@@ -39,10 +40,27 @@ if( have_posts() )
 					<div class="row mt-3">
 						<div class="col-md-3"></div>
 						<div class="col-md-6"  align="center">
-							<p class="mx-auto container-principal-chamada"><?=$conteudo_container_principal?></p>
+							<p class="mx-auto container-principal-chamada"><?=get_the_content()?></p>
 						</div>
 						<div class="col-md-3"></div>
 					</div>
+					<?php 
+					if( is_page('arquitetos') ) 
+					{
+					?>
+					<div class="row mt-3">
+						<div class="col-md-4 col-xs-2"></div>
+						<div class="col-md-2 col-xs-4" align="center">
+							<button type="button" class="btn btn-outline-secondary btn-block">Torne-se um</button>
+						</div>
+						<div class="col-md-2 col-xs-4" align="center">
+							<button type="button" class="btn btn-outline-secondary btn-block">Assista o Vídeo</button>
+						</div>
+						<div class="col-md-4 col-xs-2"></div>
+					</div>
+					<?php 
+					}
+					?>
 				</div>
 			</div>
 			<?php 
@@ -50,9 +68,9 @@ if( have_posts() )
 			?>
 			<!-- Painel com solucoes cadastradas -->
 			<div style="background-color: #ffffff;" class="container-fluid">
-				<div class="row mb-4">
+				<div class="row my-4">
 					<div class="col-md-12" align="center">
-						<p class="chamada-solucoes-produtos-1">CONHEÇA TODAS AS <span class="chamada-solucoes-produtos-2">NOSSAS SOLUÇÕES</span></p>
+						<p class="chamada-colorida-cinza">CONHEÇA TODAS AS <span class="chamada-colorida-azul">NOSSAS SOLUÇÕES</span></p>
 					</div>
 					<div class="col-md-3"></div>
 					<div class="col-md-6"  align="center">
