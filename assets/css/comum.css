@@ -54,7 +54,7 @@ body .btn-outline-secondary:hover {
 
 /* Styles para posicionamento nas paginas do site */
 .container-principal {
-	min-height: 880px;
+	min-height: 780px;
 	position: relative;
 	background-repeat: no-repeat;
 }
@@ -87,7 +87,7 @@ body .btn-outline-secondary:hover {
 .container-principal-titulo {
 	font-size: 3.5rem;
 	font-weight: bolder;
-	letter-spacing: -0.24rem;
+	letter-spacing: -0.20rem;
 }
 
 .container-principal-chamada {
@@ -96,7 +96,7 @@ body .btn-outline-secondary:hover {
 
 /* Styles para os itens de soluções*/
 
-.chamada-colorida-cinza, .chamada-colorida-azul, .texto-solucoes {
+.chamada-solucoes-produtos-1, .chamada-solucoes-produtos-2, .texto-solucoes {
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 2.0rem;
@@ -104,7 +104,7 @@ body .btn-outline-secondary:hover {
 	letter-spacing: -0.2rem;	
 }
 
-.chamada-colorida-cinza {
+.chamada-solucoes-produtos-1 {
 	color: #8f8f8f;
 }
 
@@ -115,7 +115,7 @@ body .btn-outline-secondary:hover {
 	letter-spacing: 0;
 }
 
-.chamada-colorida-azul {
+.chamada-solucoes-produtos-2 {
 	color: #59bce9;
 }
 
@@ -167,6 +167,8 @@ body .btn-outline-secondary:hover {
 	margin-top: 0.2em;
 	background: rgba(255, 255, 255, 0);
   }
+
+/* Codigos para carrosel de imagens */
 
 /*
 body .btn-outline-secondary:hover, body .btn-outline-secondary:focus {

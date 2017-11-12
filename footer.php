@@ -54,9 +54,9 @@
         </div>
     </footer>
     <!-- Bootstrap core JavaScript -->
-    <script src="<?= $home?>/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?= $home?>/assets/vendor/popper/popper.min.js"></script>
-    <script src="<?= $home?>/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?= $home?>/assets/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="<?= $home?>/assets/vendor/popper/popper.min.js"></script>
+    <script type="text/javascript" src="<?= $home?>/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <?php wp_footer();?>
 </body>
 </html>
