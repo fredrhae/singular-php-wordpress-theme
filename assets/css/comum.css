@@ -101,7 +101,7 @@ body .btn-outline-secondary:hover {
 	-webkit-font-smoothing: antialiased;
 	font-size: 2.0rem;
 	font-weight: bolder;
-	letter-spacing: -0.2rem;	
+	letter-spacing: -0.05rem;	
 }
 
 .chamada-solucoes-produtos-1 {
@@ -169,6 +169,8 @@ body .btn-outline-secondary:hover {
   }
 
 /* Codigos para carrosel de imagens */
+
+
 
 /*
 body .btn-outline-secondary:hover, body .btn-outline-secondary:focus {

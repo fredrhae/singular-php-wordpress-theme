@@ -95,3 +95,7 @@ function get_page_link_by_slug($pageSlug) {
     $page = get_page_by_title($pageSlug);
     return get_permalink($page->ID);
 }
+
+function enviar_e_checar_email($nome, $email, $telefone) {
+    return wp_mail( 'fredrhae@gmail.com', 'Cadastro arquiteto', 'Nome: ' . $nome . "\n" . 'Email: ' .  $email . "\n" . 'Telefone: ' . $telefone);
+}

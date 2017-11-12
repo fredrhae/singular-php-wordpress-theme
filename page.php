@@ -1,7 +1,23 @@
 <?php 	
 $css_escolhido = 'page';
 require_once('header.php');
-$home = get_template_directory_uri(); 
+$home = get_template_directory_uri();
+
+$nome = $_POST['form-nome'];
+$email = $_POST['form-email'];
+$telefone = $_POST['form-telefone'];
+
+$formularioEnviado = isset($nome) && isset($email) && isset($telefone);
+
+if($formularioEnviado) {
+	$enviou = enviar_e_checar_email($nome, $email, $telefone);
+
+	if($enviou) { ?>
+		<span class="email-sucesso">Seu e-mail foi enviado com sucesso!</span>
+	<?php } else { ?>
+		<span class="email-fracasso">Desculpe, ocorreu um erro, seu e-mail não foi enviado!</span>
+	<?php } 
+}
 ?>
 
 <?php
@@ -119,8 +135,119 @@ if( have_posts() )
 				</div>
 				<!-- Vantagens arquitetos -->
 				<div class="row mb-4">
-					<div class="col-md-12" align="center">
-						<p class="chamada-solucoes-produtos-1">Vantagens e benefícios de <span class="chamada-solucoes-produtos-2">ser um associado</span></p>
+					<div class="col-md-12" align="left">
+						<p class="chamada-solucoes-produtos-1">VANTAGENS E BENEFÍCIOS DE <span class="chamada-solucoes-produtos-2">SER UM ASSOCIADO</span></p>
+					</div>
+				</div>
+				<!-- Vantagens de arquiteto associado -->
+				<div class="row mb-4">
+					<div class="col-lg-4 col-sm-6 portfolio-item">
+						<div class="card h-100 border-0">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/medalha_1_beneficio.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Benefício 1</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 portfolio-item">
+						<div class="card h-100 border-0">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/trofeu_beneficio.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Benefício 2</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 portfolio-item">
+						<div class="card h-100 border-0">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/premio_beneficio.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Benefício 3</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 portfolio-item">
+						<div class="card h-100 border-0">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/medalha_2_beneficio.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Benefício 4</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 portfolio-item">
+						<div class="card h-100 border-0">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/premiacoes_beneficio.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Benefício 5</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 portfolio-item">
+						<div class="card h-100 border-0">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/medalhas_beneficio.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Benefício 6</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Torne-se um arquiteto associado -->
+				<div class="row mb-4">
+					<div class="col-md-12" align="left">
+						<p class="chamada-solucoes-produtos-1">TORNE-SE UM <span class="chamada-solucoes-produtos-2">PARCEIRO</span></p>
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div class="col-md-12">
+					<?php
+					if($formularioEnviado) {
+						$enviou = enviar_e_checar_email($nome, $email, $mensagem);
+						if($enviou) { ?>
+							<span class="email-sucesso">Seu e-mail foi enviado com sucesso!</span>
+						<?php } else { ?>
+							<span class="email-fracasso">Desculpe, ocorreu um erro, seu e-mail não foi enviado!</span>
+						<?php } 
+					}
+					?>
+					</div>
+					<div class="col-md-12">
+						<form method="post">
+							<div class="col-md-12" >
+								<div class="form-nome">
+									<input id="form-nome" type="text" placeholder="Seu nome" name="form-nome">
+								</div>
+							</div>
+							<div class="col-md-12" >
+								<div class="form-email">
+									<input id="form-email" type="email" placeholder="Seu email" name="form-email">
+								</div>
+							</div>
+							<div class="col-md-12" >
+								<div class="form-telefone">
+									<input id="form-telefone" type="text" placeholder="Seu telefone" name="form-telefone">
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-12" >
+								<button type="submit" class="btn btn-block btn-primary">Enviar</button>
+							</div>
+						</form>
 					</div>
 				</div>
 				<?php 

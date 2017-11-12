@@ -1,1 +1,46 @@
-/* Efeitos para hover da imagem do arquiteo */
+.form-nome,
+.form-email,
+.form-telefone {
+	margin: 1rem 0;
+}
+
+.form-nome input,
+.form-email input, 
+.form-telefone input {
+	width: 100%;
+	display: block;
+	font-size: 1rem;
+	padding: .5rem;
+	border-radius: 8px;
+	border: 1px solid #949494;
+	box-sizing: border-box;
+}
+
+.form-button {
+    padding: .5rem;
+    vertical-align: middle;    
+}
+
+.email-fracasso,
+.email-sucesso {
+	display: block;
+	color: #FFF;
+	padding: .5rem;
+}
+
+.email-sucesso {
+	background-color: green;
+}
+
+.email-fracasso {
+	background-color: red;
+}
+
+.main{
+    display:table;
+  }
+
+.center{
+	display:table-cell;
+	vertical-align:middle;
+}
