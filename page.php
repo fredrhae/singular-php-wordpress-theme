@@ -79,11 +79,11 @@ if( have_posts() )
 					?>
 				</div>
 			</div>
+			<?php 
+			if( is_page('arquitetos') ) {
+			?>
 			<!-- Painel com background branco -->
 			<div style="background-color: #ffffff;" class="container">
-				<?php 
-				if( is_page('arquitetos') ) {
-				?>
 				<!-- Titulo arquitetos -->
 				<div class="row mb-4">
 					<div class="col-md-12" align="center">
@@ -250,81 +250,149 @@ if( have_posts() )
 						</form>
 					</div>
 				</div>
-				<?php 
-				} 
-				?>
-				<?php 
-				if( is_page('solucoes') ) {
-				?>
-					<div class="row my-4">
-						<div class="col-md-12" align="center">
-							<p class="chamada-solucoes-produtos-1">CONHEÇA TODAS AS <span class="chamada-solucoes-produtos-2">NOSSAS SOLUÇÕES</span></p>
-						</div>
-						<div class="col-md-3"></div>
-						<div class="col-md-6"  align="center">
-							<p class="mx-auto texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
-								lobortis feugiat. Sed aliquam scelerisque sapien molestie cursus. In id malesuada est, eget porta purus.
-								Fusce neque odio, mollis quis dictum eget, ultrices ut nulla. Mauris tellus mauris, lacinia at ultricies eget, congue fermentum diam.</p>
-						</div>
-						<div class="col-md-3"></div>
+			</div>
+			<?php 
+			} 
+			if( is_page('empresa') ) {
+			?>
+			<!-- Painel com background branco -->
+			<div style="background-color: #ffffff;" class="container">
+				<!-- Titulo arquitetos -->
+				<div class="row mb-4">
+					<div class="col-md-6">
+						<img class="img-fluid" src="<?=$home?>/assets/imagens/pages/empresa/logo_grande.png" alt="">					
 					</div>
-					<!-- Carregamento das soluções cadastradas -->
-					<?php 
-					$args = array( 'post_type' => 'solucao', 'order' => 'ASC' );            
-					$loop = new WP_Query( $args );
-					if( $loop->have_posts() ) { 
-						$counter = 0;
-						?>
-					<?php while( $loop->have_posts()) {
-						// Flag para indicar se a solucao vai ser exibida na direita ou a esquerda
-						$alignRight = $counter%2 != 0;
-						$loop->the_post(); ?>
-						<div class="full-image-background" style="background-image: url(<?=the_post_thumbnail_url()?>)">
-							<div class="container vertical-center">
-								<div class="row">
-									<?php if($alignRight) {
-										$style_title = "right";
-										?>
-										<div class="col-md-6 col-xs-4"></div>
-									<?php
-									} else {
-										$style_title = "left";
-									}
+					<div class="col-md-6 mt-4">
+						<h2 class="chamada-titulo-empresa">Quem somos nós</h2>
+						<div class="row">
+							<div class="col-md-4 px-0">
+								<hr style="border-top: 3px solid #13AFE6;"/>
+							</div>
+							<div class="col-md-8 px-0">
+								<hr style="border-top: 3px solid #D1C8C9;"/>
+							</div>
+						</div>
+						<p>Somos uma empresa de estilo de vida. Inspirada por ideias que prometem mais conforto, comodidade, seguranca e muito mais felicidade para você e sua família.</p>
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div class="col-md-3 col-md-offset-3 col-sm-12 portfolio-item">
+						<div class="card h-100">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/empresa/missao.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Missão</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12 portfolio-item">
+						<div class="card h-100">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/empresa/visao.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Visão</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12 portfolio-item">
+						<div class="card h-100">
+							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/empresa/valores.png" alt=""></a>
+							<div class="card-body">
+								<h4 class="card-title">
+									<a href="#">Valores</a>
+								</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Titulo arquitetos -->
+				<div class="row mb-4">
+					<div class="col-md-12" align="center">
+						<p class="chamada-solucoes-produtos-1">Conheça a <span class="chamada-solucoes-produtos-2">Singular Automações</span></p>
+					</div>
+				</div>
+				<div class="container-video mb-4">
+					<iframe src="//www.youtube.com/embed/yCOY82UdFrw" frameborder="0" allowfullscreen class="video"></iframe>
+				</div>
+			</div>
+			<?php 
+			}
+			if( is_page('solucoes') ) {
+			?>
+				<div class="row my-4">
+					<div class="col-md-12" align="center">
+						<p class="chamada-solucoes-produtos-1">CONHEÇA TODAS AS <span class="chamada-solucoes-produtos-2">NOSSAS SOLUÇÕES</span></p>
+					</div>
+					<div class="col-md-3"></div>
+					<div class="col-md-6"  align="center">
+						<p class="mx-auto texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
+							lobortis feugiat. Sed aliquam scelerisque sapien molestie cursus. In id malesuada est, eget porta purus.
+							Fusce neque odio, mollis quis dictum eget, ultrices ut nulla. Mauris tellus mauris, lacinia at ultricies eget, congue fermentum diam.</p>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+				<!-- Carregamento das soluções cadastradas -->
+				<?php 
+				$args = array( 'post_type' => 'solucao', 'order' => 'ASC' );            
+				$loop = new WP_Query( $args );
+				if( $loop->have_posts() ) { 
+					$counter = 0;
+					?>
+				<?php while( $loop->have_posts()) {
+					// Flag para indicar se a solucao vai ser exibida na direita ou a esquerda
+					$alignRight = $counter%2 != 0;
+					$loop->the_post(); ?>
+					<div class="full-image-background" style="background-image: url(<?=the_post_thumbnail_url()?>)">
+						<div class="container vertical-center">
+							<div class="row">
+								<?php if($alignRight) {
+									$style_title = "right";
 									?>
-									<div class="col-md-6 col-xs-8" align="<?=$style_title?>" >
-										<h2 class="titulo-solucao mb-4"><?php the_title();?></h2>
-									</div>
+									<div class="col-md-6 col-xs-4"></div>
+								<?php
+								} else {
+									$style_title = "left";
+								}
+								?>
+								<div class="col-md-6 col-xs-8" align="<?=$style_title?>" >
+									<h2 class="titulo-solucao mb-4"><?php the_title();?></h2>
 								</div>
-								<div class="row">
-									<?php if($alignRight) { ?>
-										<div class="col-md-8 col-xs-8"></div>
-									<?php
-									}
-									?>
-									<div class="col-md-4 col-xs-8 texto-solucao block-with-text mb-4">
-										<?php the_content();?>
-									</div>
+							</div>
+							<div class="row">
+								<?php if($alignRight) { ?>
+									<div class="col-md-8 col-xs-8"></div>
+								<?php
+								}
+								?>
+								<div class="col-md-4 col-xs-8 texto-solucao block-with-text mb-4">
+									<?php the_content();?>
 								</div>
-								<div class="row">
-									<?php if($alignRight) { ?>
-										<div class="col-md-10 col-xs-8"></div>
-									<?php
-									}
-									?>
-									<div class="col-md-2 col-xs-4" align="center">
-										<a href="<?= the_permalink();?>" style="text-decoration: none">
-											<button type="button" class="btn btn-outline-secondary btn-block">Saiba mais</button>
-										</a>
-									</div>
+							</div>
+							<div class="row">
+								<?php if($alignRight) { ?>
+									<div class="col-md-10 col-xs-8"></div>
+								<?php
+								}
+								?>
+								<div class="col-md-2 col-xs-4" align="center">
+									<a href="<?= the_permalink();?>" style="text-decoration: none">
+										<button type="button" class="btn btn-outline-secondary btn-block">Saiba mais</button>
+									</a>
 								</div>
 							</div>
 						</div>
-					<?php
-						$counter = $counter + 1;
-						} 
+					</div>
+				<?php
+					$counter = $counter + 1;
 					} 
-				} ?>
-			</div>
+				} 
+			} ?>
 <?php	}
 	}
 ?>

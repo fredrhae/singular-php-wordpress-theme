@@ -35,7 +35,19 @@ body {
 	font-size: 2rem;
 }
 
+/* Styles para os itens de soluções*/
 
+.chamada-solucoes-produtos-1, .chamada-solucoes-produtos-2, .texto-solucoes {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 2.0rem;
+	font-weight: bolder;
+	letter-spacing: -0.05rem;	
+}
+
+.chamada-solucoes-produtos-1 {
+	color: #8f8f8f;
+}
 body .btn {
 	white-space: normal;
 }
