@@ -85,14 +85,14 @@ if( have_posts() )
 			<!-- Painel com background branco -->
 			<div style="background-color: #ffffff;" class="container">
 				<!-- Titulo arquitetos -->
-				<div class="row mb-4">
+				<div class="row">
 					<div class="col-md-12" align="center">
 						<p class="chamada-solucoes-produtos-1">Nossos <span class="chamada-solucoes-produtos-2">arquitetos parceiros</span></p>
 					</div>
 				</div>
 				<!-- Slider dos arquitetos -->
-				<div class="row mb-4">
-					<div class="col-md-12">
+				<div class="d-flex justify-content-center mb-4">
+					<div class="col-md-4">
 						<div id="myCarousel" class="carousel slide multi-item-carousel" data-ride="carousel">
 							<ol class="carousel-indicators">
 								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -300,7 +300,6 @@ if( have_posts() )
 					</div>
 				</div>
 			</div>
-			<!-- Titulo arquitetos -->
 			<div class="row mb-4">
 				<div class="col-md-12" align="center">
 					<p class="chamada-solucoes-produtos-1">Conheça a <span class="chamada-solucoes-produtos-2">Singular Automações</span></p>
