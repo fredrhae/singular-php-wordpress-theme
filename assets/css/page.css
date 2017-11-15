@@ -1,0 +1,76 @@
+.form-nome,
+.form-email,
+.form-telefone {
+	margin: 1rem 0;
+}
+
+.form-nome input,
+.form-email input, 
+.form-telefone input {
+	width: 100%;
+	display: block;
+	font-size: 1rem;
+	padding: .5rem;
+	border-radius: 8px;
+	border: 1px solid #949494;
+	box-sizing: border-box;
+}
+
+.form-button {
+    padding: .5rem;
+    vertical-align: middle;    
+}
+
+.email-fracasso,
+.email-sucesso {
+	display: block;
+	color: #FFF;
+	padding: .5rem;
+}
+
+.email-sucesso {
+	background-color: green;
+}
+
+.email-fracasso {
+	background-color: red;
+}
+
+.main{
+    display:table;
+  }
+
+.center{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.chamada-titulo-empresa, .chamada-descricao-empresa{
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #8f8f8f;	
+	letter-spacing: -0.05rem;	
+}
+
+.chamada-titulo-empresa {
+	font-size: 3.5rem;
+	font-weight: bolder;
+}
+
+.chamada-descricao-empresa {
+	font-size: 1.3rem;
+}
+
+.container-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
