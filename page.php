@@ -199,15 +199,10 @@ if( have_posts() )
 					<div class="col-lg-4 col-sm-6 portfolio-item">
 						<div class="card h-100 border-0">
 							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/medalhas_beneficio.png" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Benefício 6</a>
-								</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-							</div>
 						</div>
 					</div>
 				</div>
+
 				<!-- Torne-se um arquiteto associado -->
 				<div class="row mb-4">
 					<div class="col-md-12" align="left">
@@ -257,7 +252,7 @@ if( have_posts() )
 			?>
 			<!-- Painel com background branco -->
 			<div style="background-color: #ffffff;" class="container">
-				<!-- Titulo arquitetos -->
+				<!-- Titulo quem somos -->
 				<div class="row mb-4">
 					<div class="col-md-6">
 						<img class="img-fluid" src="<?=$home?>/assets/imagens/pages/empresa/logo_grande.png" alt="">					
@@ -272,54 +267,47 @@ if( have_posts() )
 								<hr style="border-top: 3px solid #D1C8C9;"/>
 							</div>
 						</div>
-						<p>Somos uma empresa de estilo de vida. Inspirada por ideias que prometem mais conforto, comodidade, seguranca e muito mais felicidade para você e sua família.</p>
+						<p class="chamada-descricao-empresa">Somos uma empresa de estilo de vida. Inspirada por ideias que prometem mais conforto, comodidade, seguranca e muito mais felicidade para você e sua família.</p>
 					</div>
 				</div>
-				<div class="row mb-4">
-					<div class="col-md-3 col-md-offset-3 col-sm-12 portfolio-item">
-						<div class="card h-100">
-							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/empresa/missao.png" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Missão</a>
-								</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+				<div class="d-flex flex-row justify-content-center mb-4">
+					<div class="col-md-4 col-sm-12 portfolio-item">
+						<div class="card h-100 p-4">
+							<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 100px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/missao.png" alt=""></a>
+							<div class="card-block">
+								<h4 class="card-title chamada-solucoes-produtos-2" align="center">Missão</h4>
+								<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-12 portfolio-item">
-						<div class="card h-100">
-							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/empresa/visao.png" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Visão</a>
-								</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+					<div class="col-md-4 col-sm-12 portfolio-item">
+						<div class="card h-100 p-4">
+							<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 143px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/visao.png" alt=""></a>
+							<div class="card-block">
+								<h4 class="card-title chamada-solucoes-produtos-2" align="center">Visão</h4>
+								<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-12 portfolio-item">
-						<div class="card h-100">
-							<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/empresa/valores.png" alt=""></a>
-							<div class="card-body">
-								<h4 class="card-title">
-									<a href="#">Valores</a>
-								</h4>
-								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+					<div class="col-md-4 col-sm-12 portfolio-item">
+						<div class="card h-100 p-4">
+							<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 88px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/valores.png" alt=""></a>
+							<div class="card-block">
+								<h4 class="card-title chamada-solucoes-produtos-2" align="center">Valores</h4>
+								<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<!-- Titulo arquitetos -->
-				<div class="row mb-4">
-					<div class="col-md-12" align="center">
-						<p class="chamada-solucoes-produtos-1">Conheça a <span class="chamada-solucoes-produtos-2">Singular Automações</span></p>
-					</div>
+			</div>
+			<!-- Titulo arquitetos -->
+			<div class="row mb-4">
+				<div class="col-md-12" align="center">
+					<p class="chamada-solucoes-produtos-1">Conheça a <span class="chamada-solucoes-produtos-2">Singular Automações</span></p>
 				</div>
-				<div class="container-video mb-4">
-					<iframe src="//www.youtube.com/embed/yCOY82UdFrw" frameborder="0" allowfullscreen class="video"></iframe>
-				</div>
+			</div>
+			<div class="container-video">
+				<iframe src="//www.youtube.com/embed/yCOY82UdFrw" frameborder="0" allowfullscreen class="video"></iframe>
 			</div>
 			<?php 
 			}
