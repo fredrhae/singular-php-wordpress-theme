@@ -10,6 +10,10 @@ body {
 	overflow-y: auto;
 }
 
+.flex-grow {
+    flex: 1 0 auto;
+}
+
 .container-fluid {
 	padding: 0px;
 }
@@ -66,7 +70,7 @@ body .btn-outline-secondary:hover {
 
 /* Styles para posicionamento nas paginas do site */
 .container-principal {
-	min-height: 780px;
+	min-height: 720px;
 	position: relative;
 	background-repeat: no-repeat;
 }
@@ -85,7 +89,6 @@ body .btn-outline-secondary:hover {
 	background-size: cover;	
 	overflow: hidden;
 	min-height: 400px;
-	max-height: 500px;
 }
 
 /* Styles para o item de chamada principal da home*/
@@ -180,7 +183,6 @@ body .btn-outline-secondary:hover {
 	background: rgba(255, 255, 255, 0);
   }
 
-/* Codigos para carrosel de imagens */
 
 
 
