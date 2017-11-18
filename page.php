@@ -92,7 +92,9 @@ if( have_posts() )
 
 <!-- #########   Funcoes relacionadas a pagina arquitetos ############### -->
 <?php 
-function get_architects_body_content() {?>
+function get_architects_body_content() {
+	global $home;
+	?>
 	<!-- Painel com background branco -->
 	<div style="background-color: #ffffff;" class="container">
 		<!-- Titulo arquitetos -->
@@ -283,7 +285,9 @@ function get_architects_buttons_chamada_principal() { ?>
 <!-- #########   Funcoes relacionadas a pagina empresa ############### -->
 
 <?php 
-function get_empresa_body_content() { ?>
+function get_empresa_body_content() { 
+	global $home;	
+	?>
 <!-- Painel com background branco -->
 <div style="background-color: #ffffff;" class="container">
 	<!-- Titulo quem somos -->
@@ -348,7 +352,9 @@ function get_empresa_body_content() { ?>
 
 <!-- #########   Funcoes relacionadas a pagina solucoes ############### -->
 <?php 
-function get_solucoes_body_content() { ?>
+function get_solucoes_body_content() { 
+	global $home;
+	?>
 	<div class="row my-4">
 		<div class="col-md-12" align="center">
 			<p class="chamada-solucoes-produtos-1">CONHEÇA TODAS AS <span class="chamada-solucoes-produtos-2">NOSSAS SOLUÇÕES</span></p>
@@ -420,7 +426,9 @@ function get_solucoes_body_content() { ?>
 
 <!-- #########   Funcoes relacionadas a pagina projetos ############### -->
 <?php 
-function get_projetos_body_content() { ?>
+function get_projetos_body_content() { 
+	global $home;
+	?>
 	<!-- Carregamento dos projetos cadastrados -->
 	<?php 
 	$args = array( 'post_type' => 'projeto', 'order' => 'ASC' );            
