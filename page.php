@@ -210,6 +210,12 @@ function get_architects_body_content() {?>
 			<div class="col-lg-4 col-sm-6 portfolio-item">
 				<div class="card h-100 border-0">
 					<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/medalhas_beneficio.png" alt=""></a>
+					<div class="card-body">
+						<h4 class="card-title">
+							<a href="#">Benefício 6</a>
+						</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -415,17 +421,17 @@ function get_solucoes_body_content() { ?>
 <!-- #########   Funcoes relacionadas a pagina projetos ############### -->
 <?php 
 function get_projetos_body_content() { ?>
-	<!-- Carregamento das soluções cadastradas -->
+	<!-- Carregamento dos projetos cadastrados -->
 	<?php 
 	$args = array( 'post_type' => 'projeto', 'order' => 'ASC' );            
 	$loop = new WP_Query( $args );
 	if( $loop->have_posts() ) { 
 		$counter = 0;
-		?>
-	<?php while( $loop->have_posts()) {
+		while( $loop->have_posts()) {
 		// Flag para indicar se a solucao vai ser exibida na direita ou a esquerda
 		$alignRight = $counter%2 != 0;		
 		$loop->the_post(); ?>
+		<!-- Parte de carregamento dos projetos -->
 		<div class="row w-100 m-0 py-2 px-0">
 			<?php if($alignRight) { ?>
 				<div class="col-md-6 pr-2 pb-1 px-0">
@@ -476,5 +482,64 @@ function get_projetos_body_content() { ?>
 		<?php
 		$counter = $counter + 1;
 		} 
-	} 
-}?>
+	}
+	?>
+	<!-- Chamada para os clientes -->
+	<div class="row my-4">
+		<div class="col-md-12" align="center">
+			<p class="chamada-solucoes-produtos-1"> Nossos clientes, <span class="chamada-solucoes-produtos-2">nossa família</span></p>
+		</div>
+	</div>
+	<!-- Slider com clientes satisfeitos -->
+	<div class="d-flex justify-content-center mb-4">
+		<div class="col-md-4">
+			<div id="myCarousel" class="carousel slide multi-item-carousel" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="w-100" src="http://placehold.it/300/f44336/000000" alt="First slide" style="height: 300px; width: 300px">
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Ricardo Teixeira</h3>
+							<p>Arquiteto designer de interiores</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="w-100" src="http://placehold.it/300/e91e63/000000" alt="Second slide" style="height: 300px; width: 300px">
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Hidelbrando Silva</h3>
+							<p>Arquiteto designer de interiores</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="w-100" src="http://placehold.it/300/9c27b0/000000" alt="Third slide" style="height: 300px; width: 300px">
+						<div class="carousel-caption d-none d-md-block">
+							<h3>Lorem Ipsum</h3>
+							<p>Arquiteto designer de interiores</p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Chamada para o showroom -->
+	<div class="row my-4">
+		<div class="col-md-12" align="center">
+			<p class="chamada-solucoes-produtos-1"> VISITE <span class="chamada-solucoes-produtos-2"> NOSSO SHOWROOM</span></p>
+		</div>
+	</div>
+	<!-- Agendamento de visita e vídeo do showroom -->
+<?php
+}
+?>
