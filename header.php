@@ -43,6 +43,9 @@
                         <a class="nav-link" href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?=get_page_link_by_slug('projetos')?>">Projetos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="<?=get_page_link_by_slug('blog')?>">Blog</a>
                     </li>
                 </ul>

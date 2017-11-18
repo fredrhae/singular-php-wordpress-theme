@@ -11,24 +11,24 @@
                 <div class="row">
                     <div class="col-md-4">
                         <ul class="pages">
-                            <li><a href="<?=get_page_link_by_slug('empresa')?>">A Singular</a></li>
                             <li><a href="<?=get_page_link_by_slug('solucoes')?>">Soluções</a></li>
                             <li><a href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a></li>
+                            <li><a href="<?=get_page_link_by_slug('projetos')?>">Projetos</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <ul class="pages">
-                        <li><a href="<?=get_page_link_by_slug('empresa')?>">Projetos</a></li>
+                        <li><a href="<?=get_page_link_by_slug('projetos')?>">Projetos</a></li>
                         <li><a href="<?=get_page_link_by_slug('contatos')?>">Contatos</a></li>
                         <li><a href="<?=get_page_link_by_slug('blog')?>">Blog</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <!--<div class="col-md-4">
                         <ul class="pages">
                             <li><a href="<?=get_page_link_by_slug('empresa')?>">Sobre nós</a></li>
                             <li><a href="<?=get_page_link_by_slug('empresa')?>">Visão e valores</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         	<div class="col-md-3 footer-social animated fadeInDown">
