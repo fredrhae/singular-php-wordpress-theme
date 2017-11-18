@@ -34,9 +34,6 @@
                         <a class="nav-link" href="<?=get_page_link_by_slug('empresa')?>">Empresa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?=get_page_link_by_slug('contatos')?>">Contatos</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="<?=get_page_link_by_slug('solucoes')?>">Soluções</a>
                     </li>
                     <li class="nav-item">
