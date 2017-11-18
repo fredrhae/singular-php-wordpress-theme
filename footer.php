@@ -18,9 +18,8 @@
                     </div>
                     <div class="col-md-4">
                         <ul class="pages">
-                        <li><a href="<?=get_page_link_by_slug('projetos')?>">Projetos</a></li>
-                        <li><a href="<?=get_page_link_by_slug('contatos')?>">Contatos</a></li>
-                        <li><a href="<?=get_page_link_by_slug('blog')?>">Blog</a></li>
+                            <li><a href="<?=get_page_link_by_slug('empresa')?>">A Singular</a></li>
+                            <li><a href="<?=get_page_link_by_slug('blog')?>">Contatos</a></li>
                         </ul>
                     </div>
                     <!--<div class="col-md-4">
