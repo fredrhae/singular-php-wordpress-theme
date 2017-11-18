@@ -500,34 +500,38 @@ function get_projetos_body_content() {
 	</div>
 	<!-- Slider com clientes satisfeitos -->
 	<div class="d-flex justify-content-center mb-4">
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<div id="myCarousel" class="carousel slide multi-item-carousel" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img class="w-100" src="http://placehold.it/300/f44336/000000" alt="First slide" style="height: 300px; width: 300px">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Ricardo Teixeira</h3>
-							<p>Arquiteto designer de interiores</p>
-						</div>
+						<blockquote>
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente1.png" style="width: 150px;height:150px;">
+								</div>
+								<div class="col-sm-9">
+									<p>PHP: Hypertext Preprocessor, is a general-purpose scripting language that was originally designed for web development. This helps to produce dynamic web pages. It generally runs on a web server , can be embedded into HTML.</p>
+									<small>PHP- Basic Concept</small>
+								</div>
+							</div>
+						</blockquote>
 					</div>
 					<div class="carousel-item">
-						<img class="w-100" src="http://placehold.it/300/e91e63/000000" alt="Second slide" style="height: 300px; width: 300px">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Hidelbrando Silva</h3>
-							<p>Arquiteto designer de interiores</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="w-100" src="http://placehold.it/300/9c27b0/000000" alt="Third slide" style="height: 300px; width: 300px">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Lorem Ipsum</h3>
-							<p>Arquiteto designer de interiores</p>
-						</div>
+						<blockquote>
+							<div class="row">
+								<div class="col-sm-3 text-center">
+									<img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente2.png" style="width: 150px;height:150px;">
+								</div>
+								<div class="col-sm-9">
+									<p>JQuery is lightweight write less, do more open source Javascript Library, used for interaction between JavaScript and HTML. The JQuery is not a language. The JavaScript is a Language. JQuery is built over JavaScript.The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+									<small>jQuery- Basic Concept</small>
+								</div>
+							</div>
+						</blockquote>
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -548,6 +552,35 @@ function get_projetos_body_content() {
 		</div>
 	</div>
 	<!-- Agendamento de visita e vídeo do showroom -->
+	<div class="d-flex justify-content-center mb-4">
+		<div class="col-md-4" align="center">
+				<form method="post">
+					<div class="col-md-12" >
+						<div class="form-nome">
+							<input id="form-nome" type="text" placeholder="Seu nome" name="form-nome">
+						</div>
+					</div>
+					<div class="col-md-12" >
+						<div class="form-email">
+							<input id="form-email" type="email" placeholder="Seu email" name="form-email">
+						</div>
+					</div>
+					<div class="col-md-12" >
+						<div class="form-data-visita">
+							<input id="form-data-visita" type="date" name="form-data-visita">
+						</div>
+					</div>
+					<div class="col-md-12 col-xs-12" >
+						<button type="submit" class="btn btn-block btn-primary">Agendar</button>
+					</div>
+				</form>
+		</div>
+		<div class="col-md-4" align="center">
+		<div class="container-video">
+			<iframe src="//www.youtube.com/embed/yCOY82UdFrw" frameborder="0" allowfullscreen class="video"></iframe>
+		</div>
+		</div>
+	</div>
 <?php
 }
 ?>

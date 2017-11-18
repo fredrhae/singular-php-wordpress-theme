@@ -183,8 +183,39 @@ body .btn-outline-secondary:hover {
 	background: rgba(255, 255, 255, 0);
   }
 
-
-
+/* Blockquotes */
+blockquote {
+	color: gray;
+	position: relative;
+	display: inline-block;
+	padding: 0 5px;
+	margin: 0px auto;
+  }
+  blockquote p {
+	margin-bottom: 5px;
+  }
+  blockquote:before,
+  blockquote:after {
+	content: "“";
+	font-size: 70px;
+	font-family: "Georgia", Serif;
+	color: gray;
+	position: absolute;
+	left: -30px;
+	top: 5px;
+  }
+  cite {
+	float: right;
+	color: gray;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+  }
+  blockquote:after {
+	content: "”";
+	right: -30px;
+	left: auto;
+  }
 
 /*
 body .btn-outline-secondary:hover, body .btn-outline-secondary:focus {

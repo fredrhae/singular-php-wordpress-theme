@@ -1,12 +1,14 @@
 .form-nome,
 .form-email,
-.form-telefone {
+.form-telefone,
+.form-data-visita {
 	margin: 1rem 0;
 }
 
 .form-nome input,
 .form-email input, 
-.form-telefone input {
+.form-telefone input,
+.form-data-visita input {
 	width: 100%;
 	display: block;
 	font-size: 1rem;
