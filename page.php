@@ -100,7 +100,7 @@ function get_architects_body_content() {
 		<!-- Titulo arquitetos -->
 		<div class="row">
 			<div class="col-md-12" align="center">
-				<p class="chamada-solucoes-produtos-1">Nossos <span class="chamada-solucoes-produtos-2">arquitetos parceiros</span></p>
+				<p class="chamada-titulos-cinza">Nossos <span class="chamada-titulos-azul">arquitetos parceiros</span></p>
 			</div>
 		</div>
 		<!-- Slider dos arquitetos -->
@@ -149,7 +149,7 @@ function get_architects_body_content() {
 		<!-- Vantagens arquitetos -->
 		<div class="row mb-4">
 			<div class="col-md-12" align="left">
-				<p class="chamada-solucoes-produtos-1">VANTAGENS E BENEFÍCIOS DE <span class="chamada-solucoes-produtos-2">SER UM ASSOCIADO</span></p>
+				<p class="chamada-titulos-cinza">VANTAGENS E BENEFÍCIOS DE <span class="chamada-titulos-azul">SER UM ASSOCIADO</span></p>
 			</div>
 		</div>
 		<!-- Vantagens de arquiteto associado -->
@@ -225,7 +225,7 @@ function get_architects_body_content() {
 		<!-- Torne-se um arquiteto associado -->
 		<div class="row mb-4">
 			<div class="col-md-12" align="left">
-				<p class="chamada-solucoes-produtos-1">TORNE-SE UM <span class="chamada-solucoes-produtos-2">PARCEIRO</span></p>
+				<p class="chamada-titulos-cinza">TORNE-SE UM <span class="chamada-titulos-azul">PARCEIRO</span></p>
 			</div>
 		</div>
 		<div class="row mb-4">
@@ -313,7 +313,7 @@ function get_empresa_body_content() {
 			<div class="card h-100 p-4">
 				<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 100px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/missao.png" alt=""></a>
 				<div class="card-block">
-					<h4 class="card-title chamada-solucoes-produtos-2" align="center">Missão</h4>
+					<h4 class="card-title chamada-titulos-azul" align="center">Missão</h4>
 					<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
 				</div>
 			</div>
@@ -322,7 +322,7 @@ function get_empresa_body_content() {
 			<div class="card h-100 p-4">
 				<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 143px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/visao.png" alt=""></a>
 				<div class="card-block">
-					<h4 class="card-title chamada-solucoes-produtos-2" align="center">Visão</h4>
+					<h4 class="card-title chamada-titulos-azul" align="center">Visão</h4>
 					<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
 				</div>
 			</div>
@@ -331,7 +331,7 @@ function get_empresa_body_content() {
 			<div class="card h-100 p-4">
 				<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 88px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/valores.png" alt=""></a>
 				<div class="card-block">
-					<h4 class="card-title chamada-solucoes-produtos-2" align="center">Valores</h4>
+					<h4 class="card-title chamada-titulos-azul" align="center">Valores</h4>
 					<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
 				</div>
 			</div>
@@ -340,7 +340,7 @@ function get_empresa_body_content() {
 </div>
 <div class="row mb-4">
 	<div class="col-md-12" align="center">
-		<p class="chamada-solucoes-produtos-1">Conheça a <span class="chamada-solucoes-produtos-2">Singular Automações</span></p>
+		<p class="chamada-titulos-cinza">Conheça a <span class="chamada-titulos-azul">Singular Automações</span></p>
 	</div>
 </div>
 <div class="container-video">
@@ -357,11 +357,11 @@ function get_solucoes_body_content() {
 	?>
 	<div class="row my-4">
 		<div class="col-md-12" align="center">
-			<p class="chamada-solucoes-produtos-1">CONHEÇA TODAS AS <span class="chamada-solucoes-produtos-2">NOSSAS SOLUÇÕES</span></p>
+			<p class="chamada-titulos-cinza">CONHEÇA TODAS AS <span class="chamada-titulos-azul">NOSSAS SOLUÇÕES</span></p>
 		</div>
 		<div class="col-md-3"></div>
 		<div class="col-md-6"  align="center">
-			<p class="mx-auto texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
+			<p class="mx-auto texto-conteudo-cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
 				lobortis feugiat. Sed aliquam scelerisque sapien molestie cursus. In id malesuada est, eget porta purus.
 				Fusce neque odio, mollis quis dictum eget, ultrices ut nulla. Mauris tellus mauris, lacinia at ultricies eget, congue fermentum diam.</p>
 		</div>
@@ -495,7 +495,7 @@ function get_projetos_body_content() {
 	<!-- Chamada para os clientes -->
 	<div class="row my-4">
 		<div class="col-md-12" align="center">
-			<p class="chamada-solucoes-produtos-1"> Nossos clientes, <span class="chamada-solucoes-produtos-2">nossa família</span></p>
+			<p class="chamada-titulos-cinza"> Nossos clientes, <span class="chamada-titulos-azul">nossa família</span></p>
 		</div>
 	</div>
 	<!-- Slider com clientes satisfeitos -->
@@ -548,7 +548,7 @@ function get_projetos_body_content() {
 	<!-- Chamada para o showroom -->
 	<div class="row my-4">
 		<div class="col-md-12" align="center">
-			<p class="chamada-solucoes-produtos-1"> VISITE <span class="chamada-solucoes-produtos-2"> NOSSO SHOWROOM</span></p>
+			<p class="chamada-titulos-cinza"> VISITE <span class="chamada-titulos-azul"> NOSSO SHOWROOM</span></p>
 		</div>
 	</div>
 	<!-- Agendamento de visita e vídeo do showroom -->

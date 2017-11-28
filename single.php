@@ -50,9 +50,9 @@ if( have_posts() )
                    }
                 }
                 ?>
-                <p class="chamada-solucoes-produtos-1"><?php echo $parte_azul_chamada?> <span class="chamada-solucoes-produtos-2"><?=$parte_cinza_chamada?></span></p>
+                <p class="chamada-titulos-cinza"><?php echo $parte_azul_chamada?> <span class="chamada-titulos-azul"><?=$parte_cinza_chamada?></span></p>
                 <div class="col-md-6"  align="center">
-                        <p class="mx-auto texto-solucoes"><?=get_the_content()?></p>
+                        <p class="mx-auto texto-conteudo-cinza"><?=get_the_content()?></p>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@ if( have_posts() )
         <!-- Chamada para o showroom -->
         <div class="row my-4">
             <div class="col-md-12" align="center">
-                <p class="chamada-solucoes-produtos-1"> VISITE <span class="chamada-solucoes-produtos-2"> NOSSO SHOWROOM</span></p>
+                <p class="chamada-titulos-cinza"> VISITE <span class="chamada-titulos-azul"> NOSSO SHOWROOM</span></p>
             </div>
         </div>
         <!-- Agendamento de visita e vídeo do showroom -->

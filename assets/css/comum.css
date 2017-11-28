@@ -39,19 +39,8 @@ body {
 	font-size: 2rem;
 }
 
-/* Styles para os itens de soluções*/
+/* Style para os botoes */
 
-.chamada-solucoes-produtos-1, .chamada-solucoes-produtos-2, .texto-solucoes {
-	font-family: 'Open Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-size: 2.0rem;
-	font-weight: bolder;
-	letter-spacing: -0.05rem;	
-}
-
-.chamada-solucoes-produtos-1 {
-	color: #8f8f8f;
-}
 body .btn {
 	white-space: normal;
 }
@@ -111,7 +100,7 @@ body .btn-outline-secondary:hover {
 
 /* Styles para os itens de soluções*/
 
-.chamada-solucoes-produtos-1, .chamada-solucoes-produtos-2, .texto-solucoes {
+.chamada-titulos-cinza, .chamada-titulos-azul, .texto-conteudo-cinza {
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 2.0rem;
@@ -119,18 +108,18 @@ body .btn-outline-secondary:hover {
 	letter-spacing: -0.05rem;	
 }
 
-.chamada-solucoes-produtos-1 {
+.chamada-titulos-cinza {
 	color: #8f8f8f;
 }
 
-.texto-solucoes {
+.texto-conteudo-cinza {
 	color: #979696;
 	font-size: 1.0rem;
 	font-weight: normal;
 	letter-spacing: 0;
 }
 
-.chamada-solucoes-produtos-2 {
+.chamada-titulos-azul {
 	color: #59bce9;
 }
 
@@ -240,16 +229,3 @@ body .btn-outline-secondary:hover {
 .email-fracasso {
 	background-color: red;
 }
-
-/*
-body .btn-outline-secondary:hover, body .btn-outline-secondary:focus {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #8f8f8f;
-}
-
-body .btn-outline-secondary:active, body .btn-outline-secondary:visited, body .btn-outline-secondary:active:focus, body .btn-outline-secondary:active:hover {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #8f8f8f;
-}*/
