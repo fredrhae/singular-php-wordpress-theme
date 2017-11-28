@@ -35,11 +35,11 @@
 <div style="background-color: #ffffff;" class="container-fluid">
     <div class="row mb-4">
         <div class="col-md-12" align="center">
-            <p class="chamada-solucoes-produtos-1">NOSSAS <span class="chamada-solucoes-produtos-2">SOLUÇÕES</span></p>
+            <p class="chamada-titulos-cinza">NOSSAS <span class="chamada-titulos-azul">SOLUÇÕES</span></p>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-6"  align="center">
-            <p class="mx-auto texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
+            <p class="mx-auto texto-conteudo-cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
                 lobortis feugiat. Sed aliquam scelerisque sapien molestie cursus. In id malesuada est, eget porta purus.
                 Fusce neque odio, mollis quis dictum eget, ultrices ut nulla. Mauris tellus mauris, lacinia at ultricies eget, congue fermentum diam.</p>
         </div>
@@ -108,11 +108,11 @@
         <div class="container">
             <div class="row mb-4">
                 <div class="col-md-12" align="center">
-                    <p class="chamada-solucoes-produtos-1">NOSSOS <span class="chamada-solucoes-produtos-2">PRODUTOS</span></p>
+                    <p class="chamada-titulos-cinza">NOSSOS <span class="chamada-titulos-azul">PRODUTOS</span></p>
                 </div>
                 <div class="col-md-3"></div>
                 <div class="col-md-6"  align="center">
-                    <p class="mx-auto texto-solucoes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
+                    <p class="mx-auto texto-conteudo-cinza">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas leo a 
                         lobortis feugiat. Sed aliquam scelerisque sapien molestie cursus. In id malesuada est, eget porta purus.
                         Fusce neque odio, mollis quis dictum eget, ultrices ut nulla. Mauris tellus mauris, lacinia at ultricies eget, congue fermentum diam.</p>
                 </div>
