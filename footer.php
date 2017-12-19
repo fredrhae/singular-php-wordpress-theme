@@ -1,12 +1,12 @@
 <?php $home = get_template_directory_uri();?>
     <div class="footer-bs bg-secondary">
         <div class="row">
-        	<div class="col-md-3 footer-brand animated fadeInLeft">
+        	<div class="col-md-3 col-xs-12 footer-brand animated fadeInLeft">
                 <a  style="text-decoration: none; border: none" href="<?=home_url()?>">
                     <img src="<?=$home?>/assets/imagens/Singular-logo.png" width="157" height="59" alt="">
                 </a>
             </div>
-        	<div class="col-md-6 footer-nav animated fadeInUp">
+        	<div class="col-md-6 col-xs-12 footer-nav animated fadeInUp">
                 <h4>Menu —</h4>
                 <div class="row">
                     <div class="col-md-4">
@@ -30,15 +30,15 @@
                     </div>-->
                 </div>
             </div>
-        	<div class="col-md-3 footer-social animated fadeInDown">
+        	<div class="col-md-3 col-xs-12 footer-social animated fadeInDown">
             	<h4>Siga-nos</h4>
-               	<div class="row">
-                    <div class="col-md-1">
+               	<div class="d-flex justify-content-center">
+                    <div class="px-2">
                         <a href="#">
                             <img src="<?=$home?>/assets/imagens/Facebook.svg" width="30" height="30" alt="">
                         </a>
                     </div>
-                    <div class="col-md-1 pl-4">
+                    <div class="px-2">
                         <a href="#">
                             <img src="<?=$home?>/assets/imagens/Instagram.svg" width="30" height="30" alt="">
                         </a>

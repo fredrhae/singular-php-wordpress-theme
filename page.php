@@ -309,32 +309,34 @@ function get_empresa_body_content() {
 		</div>
 	</div>
 	<div class="d-flex flex-row justify-content-center mb-4">
-		<div class="col-md-4 col-sm-12 portfolio-item">
-			<div class="card h-100 p-4">
-				<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 100px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/missao.png" alt=""></a>
-				<div class="card-block">
-					<h4 class="card-title chamada-titulos-azul" align="center">Missão</h4>
-					<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+		<div class="row">
+			<div class="col-md-4 col-xs-12 portfolio-item">
+				<div class="card h-100 p-4">
+					<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 100px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/missao.png" alt=""></a>
+					<div class="card-block">
+						<h4 class="card-title chamada-titulos-azul" align="center">Missão</h4>
+						<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-4 col-sm-12 portfolio-item">
-			<div class="card h-100 p-4">
-				<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 143px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/visao.png" alt=""></a>
-				<div class="card-block">
-					<h4 class="card-title chamada-titulos-azul" align="center">Visão</h4>
-					<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+			<div class="col-md-4 col-xs-12 portfolio-item">
+				<div class="card h-100 p-4">
+					<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 143px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/visao.png" alt=""></a>
+					<div class="card-block">
+						<h4 class="card-title chamada-titulos-azul" align="center">Visão</h4>
+						<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-4 col-sm-12 portfolio-item">
-			<div class="card h-100 p-4">
-				<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 88px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/valores.png" alt=""></a>
-				<div class="card-block">
-					<h4 class="card-title chamada-titulos-azul" align="center">Valores</h4>
-					<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+			<div class="col-md-4 col-xs-12 portfolio-item">
+				<div class="card h-100 p-4">
+					<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 88px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/valores.png" alt=""></a>
+					<div class="card-block">
+						<h4 class="card-title chamada-titulos-azul" align="center">Valores</h4>
+						<p class="card-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+					</div>
 				</div>
-			</div>
+			</div>	
 		</div>
 	</div>
 </div>
@@ -553,32 +555,34 @@ function get_projetos_body_content() {
 	</div>
 	<!-- Agendamento de visita e vídeo do showroom -->
 	<div class="d-flex justify-content-center mb-4">
-		<div class="col-md-4" align="center">
-				<form method="post">
-					<div class="col-md-12" >
-						<div class="form-nome">
-							<input id="form-nome" type="text" placeholder="Seu nome" name="form-nome">
+		<div class="row">
+			<div class="col-md-4 col-xs-12 mb-5" align="center">
+					<form method="post">
+						<div class="col-md-12" >
+							<div class="form-nome">
+								<input id="form-nome" type="text" placeholder="Seu nome" name="form-nome">
+							</div>
 						</div>
-					</div>
-					<div class="col-md-12" >
-						<div class="form-email">
-							<input id="form-email" type="email" placeholder="Seu email" name="form-email">
+						<div class="col-md-12" >
+							<div class="form-email">
+								<input id="form-email" type="email" placeholder="Seu email" name="form-email">
+							</div>
 						</div>
-					</div>
-					<div class="col-md-12" >
-						<div class="form-data-visita">
-							<input id="form-data-visita" type="date" name="form-data-visita">
+						<div class="col-md-12" >
+							<div class="form-data-visita">
+								<input id="form-data-visita" type="date" name="form-data-visita">
+							</div>
 						</div>
-					</div>
-					<div class="col-md-12 col-xs-12" >
-						<button type="submit" class="btn btn-block btn-primary">Agendar</button>
-					</div>
-				</form>
-		</div>
-		<div class="col-md-4" align="center">
-		<div class="container-video">
-			<iframe src="//www.youtube.com/embed/yCOY82UdFrw" frameborder="0" allowfullscreen class="video"></iframe>
-		</div>
+						<div class="col-md-12 col-xs-12" >
+							<button type="submit" class="btn btn-block btn-primary">Agendar</button>
+						</div>
+					</form>
+			</div>
+			<div class="col-md-4 col-xs-12" align="center">
+				<div class="container-video">
+					<iframe src="//www.youtube.com/embed/yCOY82UdFrw" frameborder="0" allowfullscreen class="video"></iframe>
+				</div>
+			</div>
 		</div>
 	</div>
 <?php

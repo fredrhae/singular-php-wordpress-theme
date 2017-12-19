@@ -30,19 +30,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li class="nav-item px-3">
                         <a class="nav-link" href="<?=get_page_link_by_slug('empresa')?>">Empresa</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3">
                         <a class="nav-link" href="<?=get_page_link_by_slug('solucoes')?>">Soluções</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3">
                         <a class="nav-link" href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3">
                         <a class="nav-link" href="<?=get_page_link_by_slug('projetos')?>">Projetos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-3">
                         <a class="nav-link" href="<?=get_page_link_by_slug('blog')?>">Blog</a>
                     </li>
                 </ul>
