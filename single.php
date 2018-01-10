@@ -68,7 +68,7 @@ if( have_posts() )
             $alignRight = $counter%2 != 0;?>
             <div class="full-image-background" style="background-image: url(<?=$attachments->url()?>)">
                 <div class="container vertical-center">
-                    <div class="row">
+                    <div class="row mx-0">
                         <?php if($alignRight) {
                             $style_title = "right";
                             ?>
@@ -82,7 +82,7 @@ if( have_posts() )
                             <h2 class="titulo-solucao mb-4"><?=$attachments->field( 'title' );?></h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mx-0">
                         <?php if($alignRight) { ?>
                             <div class="col-md-8 col-xs-8"></div>
                         <?php
@@ -110,7 +110,7 @@ if( have_posts() )
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <blockquote>
-                                <div class="row">
+                                <div class="row mx-0">
                                     <div class="col-sm-3 text-center">
                                         <img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente1.png" style="width: 150px;height:150px;">
                                     </div>
@@ -123,7 +123,7 @@ if( have_posts() )
                         </div>
                         <div class="carousel-item">
                             <blockquote>
-                                <div class="row">
+                                <div class="row mx-0">
                                     <div class="col-sm-3 text-center">
                                         <img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente2.png" style="width: 150px;height:150px;">
                                     </div>
@@ -147,7 +147,7 @@ if( have_posts() )
             </div>
         </div>
         <!-- Chamada para o showroom -->
-        <div class="row my-4">
+        <div class="row mx-0 my-4">
             <div class="col-md-12" align="center">
                 <p class="chamada-titulos-cinza"> VISITE <span class="chamada-titulos-azul"> NOSSO SHOWROOM</span></p>
             </div>

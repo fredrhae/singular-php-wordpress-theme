@@ -6,12 +6,12 @@
 <!-- Conteudo principal -->
 <div class="container-principal pb-5 mb-5" style="background-image: url(<?=$home?>/assets/imagens/background-home.png);">
     <div class="container vertical-center">
-        <div class="row">
+        <div class="row mx-0">
             <div class="col-md-12" align="center">
                 <h1 class="container-principal-titulo">SINGULAR AUTOMAÇÕES</h1>
             </div>
         </div>
-        <div class="row mt-3">
+        <div class="row mx-0 mt-3">
             <div class="col-md-3"></div>
             <div class="col-md-6"  align="center">
                 <p class="mx-auto container-principal-chamada"> Estilo de vida, inspirado por idéias que prometem mais conforto, 
@@ -19,7 +19,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
-        <div class="row mt-3">
+        <div class="row mx-0 mt-3">
             <div class="col-md-4 col-xs-2"></div>
             <div class="col-md-2 col-xs-4" align="center">
                 <button type="button" class="btn btn-outline-secondary btn-block">Saiba mais</button>
@@ -33,7 +33,7 @@
 </div>
 <!-- Painel com solucoes cadastradas -->
 <div style="background-color: #ffffff;" class="container-fluid">
-    <div class="row mb-4">
+    <div class="row mx-0 mb-4">
         <div class="col-md-12" align="center">
             <p class="chamada-titulos-cinza">NOSSAS <span class="chamada-titulos-azul">SOLUÇÕES</span></p>
         </div>
@@ -58,7 +58,7 @@
 		$loop->the_post(); ?>
         <div class="full-image-background" style="background-image: url(<?=the_post_thumbnail_url()?>)">
             <div class="container vertical-center">
-                <div class="row">
+                <div class="row mx-0">
                     <?php if($alignRight) {
                         $style_title = "right";
                         ?>
@@ -72,7 +72,7 @@
                         <h2 class="titulo-solucao mb-4"><?php the_title();?></h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mx-0">
                     <?php if($alignRight) { ?>
                         <div class="col-md-8 col-xs-8"></div>
                     <?php
@@ -82,7 +82,7 @@
                         <?php the_content();?>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mx-0">
                     <?php if($alignRight) { ?>
                         <div class="col-md-10 col-xs-8"></div>
                     <?php
@@ -102,11 +102,11 @@
     } 
     ?>
 </div>
-<!-- Painel com produtos cadastrados -->
+<!-- Painel com produtos cadastrados 
 <div style="background-color: #ffffff" class="container-fluid mt-3">
     <div class="container">
         <div class="container">
-            <div class="row mb-4">
+            <div class="row mx-0 mb-4">
                 <div class="col-md-12" align="center">
                     <p class="chamada-titulos-cinza">NOSSOS <span class="chamada-titulos-azul">PRODUTOS</span></p>
                 </div>
@@ -118,10 +118,10 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
-        </div>
-        <!-- Portfólio produtos -->
+        </div>-->
+        <!-- Portfólio produtos 
         <div class="container mb-4">
-            <div class="row">
+            <div class="row mx-0">
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
                     <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
@@ -156,9 +156,8 @@
                 </div>
             </div>
         </div>
-        <!-- /.row -->
         </div>
-    </div>
+    </div>-->
 </div>
 <div class="home-blog container">
 </div>

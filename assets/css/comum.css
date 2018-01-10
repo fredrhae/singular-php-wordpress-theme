@@ -31,12 +31,12 @@ body {
 }
 
 .chamada-principal h1 {
-	font-size: 2.5rem;
+	font-size: 32px;
 	font-weight: bold;
 }
 
 .chamada-principal p {
-	font-size: 2rem;
+	font-size: 24px;
 }
 
 /* Style para os botoes */
@@ -59,7 +59,7 @@ body .btn-outline-secondary:hover {
 
 /* Styles para posicionamento nas paginas do site */
 .container-principal {
-	min-height: 720px;
+	min-height: 500px;
 	position: relative;
 	background-repeat: no-repeat;
 }
@@ -89,13 +89,13 @@ body .btn-outline-secondary:hover {
 }
 
 .container-principal-titulo {
-	font-size: 3.5rem;
+	font-size: 56px;
 	font-weight: bolder;
 	letter-spacing: -0.20rem;
 }
 
 .container-principal-chamada {
-	font-size: 1.0rem;
+	font-size: 24px;
 }
 
 /* Styles para os itens de soluções*/
@@ -103,7 +103,7 @@ body .btn-outline-secondary:hover {
 .chamada-titulos-cinza, .chamada-titulos-azul, .texto-conteudo-cinza {
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-size: 2.0rem;
+	font-size: 32px;
 	font-weight: bolder;
 	letter-spacing: -0.05rem;	
 }
@@ -114,7 +114,7 @@ body .btn-outline-secondary:hover {
 
 .texto-conteudo-cinza {
 	color: #979696;
-	font-size: 1.0rem;
+	font-size: 24px;
 	font-weight: normal;
 	letter-spacing: 0;
 }
@@ -131,13 +131,13 @@ body .btn-outline-secondary:hover {
 }
 
 .titulo-solucao {
-	font-size: 2.5rem;
+	font-size: 32px;
 	font-weight: bolder;
 	letter-spacing: -0.1rem;
 }
 
 .texto-solucao {
-	font-size: 0.9rem;
+	font-size: 20px;
 	letter-spacing: 0;
 	text-align: justify;
 }
@@ -203,7 +203,7 @@ body .btn-outline-secondary:hover {
 .form-data-visita input {
 	width: 100%;
 	display: block;
-	font-size: 1rem;
+	font-size: 24px;
 	padding: .5rem;
 	border-radius: 8px;
 	border: 1px solid #949494;

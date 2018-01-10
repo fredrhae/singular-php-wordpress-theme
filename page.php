@@ -51,17 +51,17 @@ if( have_posts() )
 			<!-- Conteudo principal -->
 			<div class="container-principal" style="background-image: url(<?=$imagem_destacada?>);">
 				<div class="container vertical-center">
-					<div class="row">
+					<div class="row mx-0">
 						<div class="col-md-12" align="center">
 							<h1 class="container-principal-titulo"><?=$titulo_container_principal?></h1>
 						</div>
 					</div>
-					<div class="row mt-3">
-						<div class="col-md-3"></div>
-						<div class="col-md-6"  align="center">
+					<div class="row mx-0 mt-3">
+						<div class="col-md-2"></div>
+						<div class="col-md-8 col-xs-12"  align="start">
 							<p class="mx-auto container-principal-chamada"><?=get_the_content()?></p>
 						</div>
-						<div class="col-md-3"></div>
+						<div class="col-md-2"></div>
 					</div>
 					<?php 
 					if( is_page('arquitetos') ) 
@@ -98,7 +98,7 @@ function get_architects_body_content() {
 	<!-- Painel com background branco -->
 	<div style="background-color: #ffffff;" class="container">
 		<!-- Titulo arquitetos -->
-		<div class="row">
+		<div class="row mx-0">
 			<div class="col-md-12" align="center">
 				<p class="chamada-titulos-cinza">Nossos <span class="chamada-titulos-azul">arquitetos parceiros</span></p>
 			</div>
@@ -147,13 +147,13 @@ function get_architects_body_content() {
 			</div>
 		</div>
 		<!-- Vantagens arquitetos -->
-		<div class="row mb-4">
+		<div class="row mx-0 mb-4">
 			<div class="col-md-12" align="left">
 				<p class="chamada-titulos-cinza">VANTAGENS E BENEFÍCIOS DE <span class="chamada-titulos-azul">SER UM ASSOCIADO</span></p>
 			</div>
 		</div>
 		<!-- Vantagens de arquiteto associado -->
-		<div class="row mb-4">
+		<div class="row mx-0 mb-4">
 			<div class="col-lg-4 col-sm-6 portfolio-item">
 				<div class="card h-100 border-0">
 					<a href="#"><img class="img-responsive ml-3" src="<?=$home?>/assets/imagens/pages/arquitetos/medalha_1_beneficio.png" alt=""></a>
@@ -223,12 +223,12 @@ function get_architects_body_content() {
 		</div>
 
 		<!-- Torne-se um arquiteto associado -->
-		<div class="row mb-4">
+		<div class="row mx-0 mb-4">
 			<div class="col-md-12" align="left">
 				<p class="chamada-titulos-cinza">TORNE-SE UM <span class="chamada-titulos-azul">PARCEIRO</span></p>
 			</div>
 		</div>
-		<div class="row mb-4">
+		<div class="row mx-0 mb-4">
 			<div class="col-md-12">
 			<?php
 			if($formularioEnviado) {
@@ -269,7 +269,7 @@ function get_architects_body_content() {
 }
 
 function get_architects_buttons_chamada_principal() { ?>
-	<div class="row mt-3">
+	<div class="row mx-0 mt-3">
 	<div class="col-md-4 col-xs-2"></div>
 	<div class="col-md-2 col-xs-4" align="center">
 		<button type="button" class="btn btn-outline-secondary btn-block">Torne-se um</button>
@@ -291,13 +291,13 @@ function get_empresa_body_content() {
 <!-- Painel com background branco -->
 <div style="background-color: #ffffff;" class="container">
 	<!-- Titulo quem somos -->
-	<div class="row mb-4">
+	<div class="row mx-0 mb-4">
 		<div class="col-md-6">
 			<img class="img-fluid" src="<?=$home?>/assets/imagens/pages/empresa/logo_grande.png" alt="">					
 		</div>
 		<div class="col-md-6 mt-4">
 			<h2 class="chamada-titulo-empresa">Quem somos nós</h2>
-			<div class="row">
+			<div class="row mx-0">
 				<div class="col-md-4 px-0">
 					<hr style="border-top: 3px solid #13AFE6;"/>
 				</div>
@@ -309,7 +309,7 @@ function get_empresa_body_content() {
 		</div>
 	</div>
 	<div class="d-flex flex-row justify-content-center mb-4">
-		<div class="row">
+		<div class="row mx-0">
 			<div class="col-md-4 col-xs-12 portfolio-item">
 				<div class="card h-100 p-4">
 					<a href="#" align="center"><img class="card-img-top my-4" align="center" style="width: 100px; height: 100px" src="<?=$home?>/assets/imagens/pages/empresa/missao.png" alt=""></a>
@@ -340,7 +340,7 @@ function get_empresa_body_content() {
 		</div>
 	</div>
 </div>
-<div class="row mb-4">
+<div class="row mx-0 mb-4">
 	<div class="col-md-12" align="center">
 		<p class="chamada-titulos-cinza">Conheça a <span class="chamada-titulos-azul">Singular Automações</span></p>
 	</div>
@@ -357,7 +357,7 @@ function get_empresa_body_content() {
 function get_solucoes_body_content() { 
 	global $home;
 	?>
-	<div class="row my-4">
+	<div class="row mx-0 my-4">
 		<div class="col-md-12" align="center">
 			<p class="chamada-titulos-cinza">CONHEÇA TODAS AS <span class="chamada-titulos-azul">NOSSAS SOLUÇÕES</span></p>
 		</div>
@@ -382,7 +382,7 @@ function get_solucoes_body_content() {
 		$loop->the_post(); ?>
 		<div class="full-image-background" style="background-image: url(<?=the_post_thumbnail_url()?>)">
 			<div class="container vertical-center">
-				<div class="row">
+				<div class="row mx-0">
 					<?php if($alignRight) {
 						$style_title = "right";
 						?>
@@ -396,7 +396,7 @@ function get_solucoes_body_content() {
 						<h2 class="titulo-solucao mb-4"><?php the_title();?></h2>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mx-0">
 					<?php if($alignRight) { ?>
 						<div class="col-md-8 col-xs-8"></div>
 					<?php
@@ -406,7 +406,7 @@ function get_solucoes_body_content() {
 						<?php the_content();?>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mx-0">
 					<?php if($alignRight) { ?>
 						<div class="col-md-10 col-xs-8"></div>
 					<?php
@@ -442,7 +442,7 @@ function get_projetos_body_content() {
 		$alignRight = $counter%2 != 0;		
 		$loop->the_post(); ?>
 		<!-- Parte de carregamento dos projetos -->
-		<div class="row w-100 m-0 py-2 px-0">
+		<div class="row mx-0 w-100 m-0 py-2 px-0">
 			<?php if($alignRight) { ?>
 				<div class="col-md-6 pr-2 pb-1 px-0">
 					<?php
@@ -495,7 +495,7 @@ function get_projetos_body_content() {
 	}
 	?>
 	<!-- Chamada para os clientes -->
-	<div class="row my-4">
+	<div class="row mx-0 my-4">
 		<div class="col-md-12" align="center">
 			<p class="chamada-titulos-cinza"> Nossos clientes, <span class="chamada-titulos-azul">nossa família</span></p>
 		</div>
@@ -511,7 +511,7 @@ function get_projetos_body_content() {
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<blockquote>
-							<div class="row">
+							<div class="row mx-0">
 								<div class="col-sm-3 text-center">
 									<img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente1.png" style="width: 150px;height:150px;">
 								</div>
@@ -524,7 +524,7 @@ function get_projetos_body_content() {
 					</div>
 					<div class="carousel-item">
 						<blockquote>
-							<div class="row">
+							<div class="row mx-0">
 								<div class="col-sm-3 text-center">
 									<img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente2.png" style="width: 150px;height:150px;">
 								</div>
@@ -548,15 +548,14 @@ function get_projetos_body_content() {
 		</div>
 	</div>
 	<!-- Chamada para o showroom -->
-	<div class="row my-4">
+	<div class="row mx-0 my-4">
 		<div class="col-md-12" align="center">
 			<p class="chamada-titulos-cinza"> VISITE <span class="chamada-titulos-azul"> NOSSO SHOWROOM</span></p>
 		</div>
 	</div>
 	<!-- Agendamento de visita e vídeo do showroom -->
-	<div class="d-flex justify-content-center mb-4">
-		<div class="row">
-			<div class="col-md-4 col-xs-12 mb-5" align="center">
+	<div class="d-flex justify-content-center flex-wrap mb-4">
+		<div class="col-md-4 col-xs-12 mb-5" align="center">
 					<form method="post">
 						<div class="col-md-12" >
 							<div class="form-nome">
@@ -583,7 +582,6 @@ function get_projetos_body_content() {
 					<iframe src="//www.youtube.com/embed/yCOY82UdFrw" frameborder="0" allowfullscreen class="video"></iframe>
 				</div>
 			</div>
-		</div>
 	</div>
 <?php
 }
