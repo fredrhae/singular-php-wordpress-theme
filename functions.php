@@ -70,6 +70,40 @@ function registrar_projeto() {
 
 add_action('init', 'registrar_projeto');
 
+function registrar_arquitetos() {
+    $descricao = 'Usado para listar os arquitetos parceiros da Singular';
+    $singular = 'Arquiteto';
+    $plural = 'Arquitetos';
+
+    $labels = array(
+        'name' => $plural,
+        'singular_name' => $singular,
+        'view_item' => 'Ver ' . $singular,
+        'edit_item' => 'Editar ' . $singular,
+        'new_item' => 'Novo ' . $singular,
+        'add_new_item' => 'Adicionar novo ' . $singular
+    );
+
+    $supports = array(
+        'title',
+        'editor',
+        'thumbnail'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'description' => $descricao,
+        'public' => true,
+        'menu_icon' => 'dashicons-universal-access',
+        'supports' => $supports
+    );
+
+
+    register_post_type( 'arquiteto', $args);    
+}
+
+add_action('init', 'registrar_arquitetos');
+
 function get_titulo() {
 	if( is_home() ) {
 		bloginfo('name');
@@ -121,7 +155,7 @@ function my_attachments( $attachments )
     'priority'      => 'high',
 
     // allowed file type(s) (array) (image|video|text|audio|application)
-    'filetype'      => array('image'),  // no filetype limit
+    'filetype'      => array('image, text'),  // no filetype limit
 
     // include a note within the meta box (string)
     'note'          => 'Anexe arquivos de imagem aqui!',
@@ -151,3 +185,8 @@ function my_attachments( $attachments )
 }
 
 add_action( 'attachments_register', 'my_attachments' );
+
+function read_content_from_text_file($path_text_file)
+{
+  return file_get_contents($path_text_file);
+}

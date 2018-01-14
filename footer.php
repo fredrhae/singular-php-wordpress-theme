@@ -7,7 +7,7 @@
                     </a>
                 </div>
                 <div class="col-md-3 col-xs-12 footer-nav animated fadeInUp">
-                    <a href="#" style="text-decoration: none"><h4>Ir para o topo —</h4></a>
+                    <a href="#" style="text-decoration: none; color:"><h4>Ir para o topo —</h4></a>
                     <div class="row mx-0">
                             <ul class="pages">
                                 <li><a href="<?=get_page_link_by_slug('solucoes')?>">Soluções</a></li>
