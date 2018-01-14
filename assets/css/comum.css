@@ -77,6 +77,7 @@ body .btn-outline-secondary:hover {
 	margin: 0 auto;	
 	background-size: cover;	
 	overflow: hidden;
+	min-height: 400px;
 }
 
 .full-image-background-principal-home {
