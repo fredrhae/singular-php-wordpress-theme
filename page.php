@@ -5,6 +5,7 @@ require_once('arquitetos.php');
 require_once('empresa.php');
 require_once('solucoes.php');
 require_once('projetos.php');
+require_once('contato.php');
 $home = get_template_directory_uri();
 
 $nome = $_POST['form-nome'];
@@ -39,6 +40,9 @@ switch ($post_slug) {
 	case 'projetos':
 		$titulo_container_principal = "PROJETOS REALIZADOS";
 	break;
+	case 'contatos':
+		$titulo_container_principal = "ENTRE EM CONTATO";
+	break;
 }
 
 if( have_posts() ) 
@@ -60,6 +64,7 @@ if( have_posts() )
 							<h1 class="container-principal-titulo"><?=$titulo_container_principal?></h1>
 						</div>
 					</div>
+					<?php if(is_page('contatos') == false) {?>
 					<div class="row mx-0 mt-3">
 						<div class="col-md-2"></div>
 						<div class="col-md-8 col-xs-12"  align="start">
@@ -67,7 +72,8 @@ if( have_posts() )
 						</div>
 						<div class="col-md-2"></div>
 					</div>
-					<?php 
+					<?php
+					}
 					if( is_page('arquitetos') ) 
 					{
 						get_architects_buttons_chamada_principal();
@@ -87,7 +93,10 @@ if( have_posts() )
 			} 
 			if( is_page('projetos') ) {
 				get_projetos_body_content();
-			} 
+			}
+			if( is_page('contatos') ) {
+				get_contatos_body_content();
+			}
 			?>
 <?php	}
 	}

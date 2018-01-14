@@ -14,6 +14,7 @@
                                 <li><a href="<?=get_page_link_by_slug('arquitetos')?>">Arquitetos</a></li>
                                 <li><a href="<?=get_page_link_by_slug('projetos')?>">Projetos</a></li>
                                 <li><a href="<?=get_page_link_by_slug('empresa')?>">A Singular</a></li>
+                                <li><a href="<?=get_page_link_by_slug('contato')?>">Contato</a></li>
                             </ul>
                     </div>
                 </div>

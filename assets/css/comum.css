@@ -196,6 +196,8 @@ body .btn-outline-secondary:hover {
 .form-nome,
 .form-email,
 .form-telefone,
+.form-assunto,
+.form-mensagem,
 .form-data-visita {
 	margin: 1rem 0;
 }
@@ -203,10 +205,12 @@ body .btn-outline-secondary:hover {
 .form-nome input,
 .form-email input, 
 .form-telefone input,
+.form-assunto input,
+.form-mensagem input,
 .form-data-visita input {
 	width: 100%;
 	display: block;
-	font-size: 24px;
+	font-size: 16px;
 	padding: .5rem;
 	border-radius: 8px;
 	border: 1px solid #949494;
