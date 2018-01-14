@@ -104,6 +104,40 @@ function registrar_arquitetos() {
 
 add_action('init', 'registrar_arquitetos');
 
+function registrar_depoimento_cliente() {
+    $descricao = 'Usado para listar os testemunhos de clientes da Singular';
+    $singular = 'Depoimento de Cliente';
+    $plural = 'Depoimentos de Clientes';
+  
+    $labels = array(
+        'name' => $plural,
+        'singular_name' => $singular,
+        'view_item' => 'Ver ' . $singular,
+        'edit_item' => 'Editar ' . $singular,
+        'new_item' => 'Novo ' . $singular,
+        'add_new_item' => 'Adicionar novo ' . $singular
+    );
+  
+    $supports = array(
+        'title',
+        'editor',
+        'thumbnail'
+    );
+  
+    $args = array(
+        'labels' => $labels,
+        'description' => $descricao,
+        'public' => true,
+        'menu_icon' => 'dashicons-testimonial',
+        'supports' => $supports
+    );
+  
+  
+    register_post_type( 'depoimentoCliente', $args);    
+  }
+  
+  add_action('init', 'registrar_depoimento_cliente');
+
 function get_titulo() {
 	if( is_home() ) {
 		bloginfo('name');

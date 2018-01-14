@@ -74,53 +74,8 @@ function get_projetos_body_content() {
 			<p class="chamada-titulos-cinza"> Nossos clientes, <span class="chamada-titulos-azul">nossa família</span></p>
 		</div>
 	</div>
-	<!-- Slider com clientes satisfeitos -->
-	<div class="d-flex justify-content-center mb-4">
-		<div class="col-md-6">
-			<div id="myCarousel" class="carousel slide multi-item-carousel" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<blockquote>
-							<div class="row mx-0">
-								<div class="col-sm-3 text-center">
-									<img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente1.png" style="width: 150px;height:150px;">
-								</div>
-								<div class="col-sm-9">
-									<p>PHP: Hypertext Preprocessor, is a general-purpose scripting language that was originally designed for web development. This helps to produce dynamic web pages. It generally runs on a web server , can be embedded into HTML.</p>
-									<small>PHP- Basic Concept</small>
-								</div>
-							</div>
-						</blockquote>
-					</div>
-					<div class="carousel-item">
-						<blockquote>
-							<div class="row mx-0">
-								<div class="col-sm-3 text-center">
-									<img class="img-circle" src="<?=$home?>/assets/imagens/pages/projetos/cliente2.png" style="width: 150px;height:150px;">
-								</div>
-								<div class="col-sm-9">
-									<p>JQuery is lightweight write less, do more open source Javascript Library, used for interaction between JavaScript and HTML. The JQuery is not a language. The JavaScript is a Language. JQuery is built over JavaScript.The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
-									<small>jQuery- Basic Concept</small>
-								</div>
-							</div>
-						</blockquote>
-					</div>
-				</div>
-				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</div>
-	</div>
+    <!-- Slider com clientes satisfeitos -->
+	<?php get_template_part('/templates/present-testemunho-clientes');?>
 	<!-- Chamada para o showroom -->
 	<div class="row mx-0 my-4">
 		<div class="col-md-12" align="center">

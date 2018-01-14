@@ -18,13 +18,15 @@ function get_solucoes_body_content() {
 		<div class="col-md-3"></div>
 	</div>
 	<!-- Carregamento das soluções cadastradas -->
-	<?php 
-	$args = array( 'post_type' => 'solucao', 'order' => 'ASC' );            
+	<?php get_solucoes(-1);
+}
+
+function get_solucoes($posts_per_page) {
+	$args = array( 'post_type' => 'solucao', 'posts_per_page' => $posts_per_page, 'order' => 'ASC' );            
 	$loop = new WP_Query( $args );
 	if( $loop->have_posts() ) { 
 		$counter = 0;
-		?>
-	<?php while( $loop->have_posts()) {
+		while( $loop->have_posts()) {
 		// Flag para indicar se a solucao vai ser exibida na direita ou a esquerda
 		$alignRight = $counter%2 != 0;
 		$loop->the_post(); ?>
@@ -71,5 +73,5 @@ function get_solucoes_body_content() {
 		<?php
 		$counter = $counter + 1;
 		} 
-	} 
+	}
 }
