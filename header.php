@@ -41,6 +41,9 @@
                     </li>
                     <li class="nav-item px-3">
                         <a class="nav-link" href="<?=get_page_link_by_slug('projetos')?>">Projetos</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="<?=get_page_link_by_slug('contatos')?>">Contatos</a>
                     </li><!--
                     <li class="nav-item px-3">
                         <a class="nav-link" href="<?=get_page_link_by_slug('blog')?>">Blog</a>
