@@ -157,6 +157,8 @@ function enviar_e_checar_email($nome, $email, $telefone) {
     return wp_mail( 'fredrhae@gmail.com', 'Cadastro arquiteto', 'Nome: ' . $nome . "\n" . 'Email: ' .  $email . "\n" . 'Telefone: ' . $telefone);
 }
 
+add_filter( 'attachments_default_instance', '__return_false' ); // disable the default instance
+
 function my_attachments( $attachments )
 {
   $fields         = array(
