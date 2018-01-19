@@ -153,8 +153,10 @@ function get_page_link_by_slug($pageSlug) {
     return get_permalink($page->ID);
 }
 
-function enviar_e_checar_email($nome, $email, $telefone) {
-    return wp_mail( 'fredrhae@gmail.com', 'Cadastro arquiteto', 'Nome: ' . $nome . "\n" . 'Email: ' .  $email . "\n" . 'Telefone: ' . $telefone);
+function enviar_e_checar_email($nome, $email, $telefone, $assunto, $mensagem) {
+    $email_body = "Nome: " . $nome . " | " . "Email: " .  $email . " | " . "Telefone: " . $telefone .
+    "Assunto: " . $assunto . " | " . "Mensagem: " . $mensagem;
+    return wp_mail( sanitize_email('fred.rhae@gmail.com.br'), 'Contato via site', $email_body);
 }
 
 add_filter( 'attachments_default_instance', '__return_false' ); // disable the default instance
