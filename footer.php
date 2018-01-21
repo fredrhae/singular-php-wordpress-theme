@@ -41,7 +41,7 @@
     </div>
     <footer class="py-4 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white" style="font-size: 0.7rem">Rua Otacílio Mota, 109 - Engenheiro Luciano Cavalvante - Fortaleza CE | Fone: +55 (85) 3244-3637 singularautomacoes@gmail.com - Copyright &copy; Singular 2017</p>
+            <p class="m-0 text-center text-white" style="font-size: 0.7rem">Rua Otacílio Mota, 109 - Engenheiro Luciano Cavalvante - Fortaleza CE | Fone: +55 (85) 3244-3637 singular@singularautomacoes.com.br - Copyright &copy; Singular 2017</p>
         </div>
     </footer>
     <!-- Bootstrap core JavaScript -->

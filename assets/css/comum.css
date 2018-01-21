@@ -198,8 +198,7 @@ body .btn-outline-secondary:hover {
 .form-email,
 .form-telefone,
 .form-assunto,
-.form-mensagem,
-.form-data-visita {
+.form-mensagem{
 	margin: 1rem 0;
 }
 
@@ -207,8 +206,7 @@ body .btn-outline-secondary:hover {
 .form-email input, 
 .form-telefone input,
 .form-assunto input,
-.form-mensagem input,
-.form-data-visita input {
+.form-mensagem input {
 	width: 100%;
 	display: block;
 	font-size: 16px;
