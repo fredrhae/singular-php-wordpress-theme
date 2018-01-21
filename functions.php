@@ -156,7 +156,7 @@ function get_page_link_by_slug($pageSlug) {
 function enviar_e_checar_email($nome, $email, $telefone, $assunto, $mensagem) {
     $email_body = "Nome: " . $nome . " | " . "Email: " .  $email . " | " . "Telefone: " . $telefone .
     "Assunto: " . $assunto . " | " . "Mensagem: " . $mensagem;
-    return wp_mail( sanitize_email('fred.rhae@gmail.com.br'), 'Contato via site', $email_body);
+    return wp_mail( sanitize_email('singular@singularautomacoes.com.br'), 'Contato via site', $email_body);
 }
 
 add_filter( 'attachments_default_instance', '__return_false' ); // disable the default instance
